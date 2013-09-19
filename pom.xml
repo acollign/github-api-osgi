@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.kohsuke</groupId>
   <artifactId>github-api-osgi</artifactId>
-  <version>1.44-SNAPSHOT</version>
+  <version>1.45-SNAPSHOT</version>
   <name>GitHub API for Java</name>
   <url>http://github.com/acollign/${project.artifactId}/</url>
   <description>This bundle simply wraps GitHub API for Java</description>
@@ -70,7 +70,7 @@
     <dependency>
       <groupId>org.kohsuke</groupId>
       <artifactId>github-api</artifactId>
-      <version>1.44</version>
+      <version>1.45-SNAPSHOT</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>

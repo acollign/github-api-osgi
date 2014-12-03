@@ -2,8 +2,8 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.kohsuke</groupId>
   <artifactId>github-api-osgi</artifactId>
-  <version>1.44-SNAPSHOT</version>
-  <name>GitHub API for Java</name>
+  <version>1.59</version>
+  <name>GitHub API for Java (OSGi-fied)</name>
   <url>http://github.com/acollign/${project.artifactId}/</url>
   <description>This bundle simply wraps GitHub API for Java</description>
   <packaging>bundle</packaging>
@@ -70,7 +70,7 @@
     <dependency>
       <groupId>org.kohsuke</groupId>
       <artifactId>github-api</artifactId>
-      <version>1.44</version>
+      <version>${project.version}</version>
     </dependency>
     <dependency>
       <groupId>commons-lang</groupId>
@@ -111,6 +111,40 @@
       <version>1.4</version>
       <optional>true</optional>
     </dependency>
+      <dependency>
+          <groupId>com.squareup.okhttp</groupId>
+          <artifactId>okhttp-urlconnection</artifactId>
+          <version>2.0.0</version>
+          <optional>true</optional>
+      </dependency>
+      <dependency>
+          <groupId>com.squareup.okhttp</groupId>
+          <artifactId>okhttp</artifactId>
+          <version>2.0.0</version>
+          <optional>true</optional>
+      </dependency>
+     <dependency>
+      <groupId>com.squareup.okio</groupId>
+      <artifactId>okio</artifactId>
+      <version>1.0.0</version>
+      <optional>true</optional>
+    </dependency>
+
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>2.2.3</version>
+    </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-annotations</artifactId>
+          <version>2.2.3</version>
+      </dependency>
+      <dependency>
+          <groupId>com.fasterxml.jackson.core</groupId>
+          <artifactId>jackson-core</artifactId>
+          <version>2.2.3</version>
+      </dependency>
   </dependencies>
 
 </project>
